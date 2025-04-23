@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crafter</title>
+    <link rel="stylesheet" href="../src/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <!-- <style>
+        .tns-nav {
+          display: flex !important;
+          justify-content: center;
+          margin-top: 1rem;
+          position: absolute;
+          top: 65%;
+          right: 50%;
+        }
+        .tns-nav button {
+          background-color: gray;
+          border-radius: 50%;
+          width: 10px;
+          height: 10px;
+          margin: 0 5px;
+          border: none;
+        }
+        .tns-nav button.tns-nav-active {
+          background-color: white;
+        }
+    </style> -->
+</head>
+<body class="!font-poppins">
+    
+    <!-- HEADER AREA -->
+
+    <div class="header lg:fixed lg:z-30 lg:w-full lg:opacity-80 lg:bg-transparent bg-bsbrown border-b-[1px] border-black shadow-xl">
+        <div class="container">
+            <div class="header_wrapper">
+
+                <!-- NAVD -->
+
+                <div class="header_navD hidden lg:flex items-center justify-between">
+                    <div class="header_logo">
+                        <img src="./img/logo-inverse-303x84.png" alt="" class="w-[150px] h-[40px]">
+                    </div>
+                    <div class="nav_d">
+                        <ul class="flex gap-10 text-bswhite font-semibold">
+                            <li><a href="">HOME</a></li>
+                            <li><a href="">PAGES</a></li>
+                            <li><a href="">PRICING</a></li>
+                            <li><a href="">SPEAKERS</a></li>
+                            <li><a href="">SPONSORS</a></li>
+                            <li><a href="">CONTACTS</a></li>
+                        </ul>
+                    </div>
+                    <div class="navD_btn">
+                        <a href="" class="tcktbtn">BUY TICKETS</a>
+                    </div>
+                </div>
+
+                <!-- NAVM -->
+
+                <div class="header_navM flex items-center relative lg:hidden">
+                    <div class="toggle_menu">
+                        <span class="block w-8 h-[2px] bg-bswhite transition-all"></span>
+                        <span class="block w-8 h-[2px] bg-bswhite transition-all my-2"></span>
+                        <span class="block w-8 h-[2px] bg-bswhite transition-all"></span>
+                    </div>
+                    <div class="header_logo ml-4">
+                        <img src="./img/logo-inverse-303x84.png" alt="" class="w-[150px] h-[40px]">
+                    </div>
+
+                    <div class="nav_m absolute bg-bsbrown top-[65px] -left-6 flex flex-col h-[100vh] w-0 overflow-hidden transition-all z-10">
+                        <ul class="flex flex-col gap-2 my-4">
+                            <li class="py-2 px-4 bg-bscyan"><a href="" class="text-bsgray">Home</a></li>
+                            <li class="py-2 px-4 hover:bg-bscyan transition-all"><a href="" class="text-bsgray">Pages</a></li>
+                            <li class="py-2 px-4 hover:bg-bscyan transition-all"><a href="" class="text-bsgray">Pricing</a></li>
+                            <li class="py-2 px-4 hover:bg-bscyan transition-all"><a href="" class="text-bsgray">Speakers</a></li>
+                            <li class="py-2 px-4 hover:bg-bscyan transition-all"><a href="" class="text-bsgray">Sponsors</a></li>
+                            <li class="py-2 px-4 hover:bg-bscyan transition-all"><a href="" class="text-bsgray">Contacts</a></li>
+                        </ul>
+                        <div class="navm_btn mt-10 ml-4">
+                            <a href="" class="tcktbtn">BUY TICKETS</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BANNER AREA -->
+
+    <section id="banner">
+                <div class="banner_wrapper">
+                    <div class="slider relative">
+
+                        <!-- SLIDE 1 -->
+
+                        <div class="slide bg-banner1 bg-cover bg-center h-[540px] lg:h-[1000px] flex py-[60px] md:py-[85px] lg:pt-[200px]">
+                            <div class="slide_text flex flex-col gap-4 w-fit h-fit m-auto">
+                                <h5 class="text-[18px] text-bswhite">JULY 05-09 2021, LOS ANGELES, CA</h5>
+                                <span class=" block w-[90px] h-[1px] bg-bswhite"></span>
+                                <h2 class="text-[clamp(28px,4vw,50px)] text-bswhite font-bold">EVENTY UNITES</h2>
+                                <h1 class="text-[clamp(70px,10vw,160px)] font-bold bg-gradient-to-r from-bspink via-bsorange to-bsyellow bg-clip-text text-transparent">PEOPLE</h1>
+                                <div class="banner_btn">
+                                    <a href="" class="buybtn">BUY TICKETS</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- SLIDE 2 -->
+
+                        <div class="slide bg-banner2 bg-cover bg-center h-[540px] lg:h-[1000px] flex flex-col gap-4 py-[60px] md:py-[85px]">
+                            <div class="slide_text flex flex-col md:flex-row-reverse gap-4 justify-center w-fit h-full mx-auto">
+                                <div class="flex flex-col w-fit justify-end h-[320px] lg:h-[600px]">
+                                    <span class="text-bsyellow text-center"><i class="fa-solid fa-play text-[25px]"></i></span>
+                                    <h6 class="text-[24px] text-bsgray italic font-extrabold mt-[10px]">
+                                        What is
+                                        <br>
+                                        Eventy?
+                                    </h6>
+                                </div>
+                                <div class="my-auto lg:w-[700px]">
+                                    <h5 class="text-[18px] text-bswhite">JULY 05-09 2021, LOS ANGELES, CA</h5>
+                                    <span class=" block w-[90px] h-[1px] bg-bswhite"></span>
+                                    <h2 class="text-[clamp(28px,4vw,50px)] text-bswhite font-bold">TALK ABOUT YOUR</h2>
+                                    <h1 class="text-[clamp(70px,10vw,160px)] font-bold bg-gradient-to-r from-bspink via-bsorange to-bsyellow bg-clip-text text-transparent">IDEA</h1>
+                                    <div class="banner_btn">
+                                    <a href="" class="buybtn">BUY TICKETS</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div id="controls">
+                    <button class="previous text-bsgray hover:text-bscyan text-2xl mx-4 transition-all absolute top-[50%] left-0"><i class="fa-solid fa-chevron-left"></i></button>
+                    <button class="next text-bsgray hover:text-bscyan text-2xl mx-4 transition-all absolute top-[50%] right-0"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+    </section>
+
+    <!-- TIMER AREA -->
+
+    <!-- WELCOME AREA -->
+
+    <div class="welcome py-[60px]">
+        <div class="container">
+            <div class="welcome_wrapper flex flex-col gap-8 lg:grid lg:grid-cols-2">
+                <div class="welcome_text flex flex-col gap-8">
+                    <div class="welcome_title flex gap-6 items-center">
+                        <span class="block w-[35px] h-[3px] bg-bscyan"></span>
+                        <h3 class="text-[clamp(24px,4vw,36px)] font-bold">Welcome to Eventy</h3>
+                    </div>
+                    <div class="md:flex md:gap-20">
+                        <div class="title_image text-center w-fit">
+                            <div class="w-[129px]">
+                                <img src="./img/user-1-129x152.jpg" alt="" class="w-[129px] h-[152px]">
+                            </div>
+                            <a href="" class="text-[18px] font-semibold">Alice Parker</a>
+                            <p class="text-[10px] mt-[5px]">Founder</p>
+                        </div>
+                        <div class="pb-[15px]">
+                            <p class="text-[15px] font-extralight">Our event is a place where the best minds of the generation meet and discuss the cutting-edge business ideas, issues, and solutions. Join the community of leaders today!</p>
+                            <div class="title_btn">
+                                <a href="" class="readbtn mt-[30px]">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="welcome_img">
+                    <div>
+                        <img src="./img/home-1-599x376.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+    <script src="../dist/js/script.js"></script>
+
+</body>
+</html>

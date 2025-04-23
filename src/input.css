@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+}
+
+@layer components {
+
+    .body {
+        @apply font-poppins
+    }
+    .container {
+        @apply max-w-[90rem] w-full mx-auto p-6
+    }
+
+    /* TOGGLE MENU */
+
+    .toggle_menu {
+        @apply lg:hidden;
+    }
+    .toggle_menu.open span:first-child {
+        @apply w-4 transform translate-y-[4.5px] translate-x-[-2px] rotate-[-45deg] transition-all
+    }
+    .toggle_menu.open span:last-child {
+        @apply w-4 transform translate-y-[-4.5px] translate-x-[-2px] rotate-[45deg] transition-all
+    }
+
+    /* NAVM */
+
+    .nav_m.open {
+        @apply w-[270px] transition-all
+    }
+
+}
+
+@layer utilities {
+    
+    .tcktbtn {
+        @apply inline-block text-bswhite font-semibold bg-bslyellow hover:bg-bsbrowndark transition-all py-2 px-6 rounded-md
+    }
+
+    .buybtn {
+        @apply inline-block text-bswhite font-semibold bg-gradient-to-r from-bsblue to-bscyan hover:bg-gradient-to-l transition-all py-5 px-9 rounded-md
+    }
+
+    .readbtn {
+        @apply inline-block text-[15px] font-semibold py-5 px-9 border hover:border-transparent hover:bg-bslyellow transition-all border-black rounded-md
+    }
+
+}
