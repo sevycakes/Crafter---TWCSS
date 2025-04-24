@@ -22,3 +22,78 @@ const tnslider = tns({
     prevButton: ".previous",
     nextButton: ".next"
 })
+
+// TIMER
+
+// const Days = document.getElementById('days');
+// const Hours = document.getElementById('hours');
+// const Minutes = document.getElementById('minutes');
+// const Seconds = document.getElementById('seconds');
+
+// const targetDate = new Date("June 1 2025 00:00:00").getTime();
+
+// function timer () {
+//     const currentDate = new Date().getTime();
+//     const distance = targetDate - currentDate;
+
+//     const days = Math.floor(distance / 1000 / 60 / 60 / 24);
+//     const hours = Math.floor(distance / 1000 / 60 / 60) % 24;
+//     const minutes = Math.floor(distance / 1000 / 60) % 60;
+//     const seconds = Math.floor(distance / 1000) % 60;
+
+//     Days.innerHTML = days;
+//     Hours.innerHTML = hours;
+//     Minutes.innerHTML = minutes;
+//     Seconds.innerHTML = seconds;
+// }
+
+// setInterval(timer,1000);
+
+const getElement = id => document.getElementById(id);
+const [Days, Hours, Minutes, Seconds] = ['days', 'hours', 'minutes', 'seconds'].map(getElement);
+
+const targetDate = new Date("May 1, 2025 00:00:00").getTime();
+
+setInterval(() => {
+  const distance = targetDate - Date.now();
+
+  const time = {
+    days: Math.floor(distance / (1000 * 60 * 60 * 24)),
+    hours: Math.floor(distance / (1000 * 60 * 60)) % 24,
+    minutes: Math.floor(distance / (1000 * 60)) % 60,
+    seconds: Math.floor(distance / 1000) % 60,
+  };
+
+  Days.textContent = time.days;
+  Hours.textContent = time.hours;
+  Minutes.textContent = time.minutes;
+  Seconds.textContent = time.seconds;
+}, 1000);
+
+// SCHEDULE
+
+const scheduleNav = document.querySelectorAll(".schedule_nav_link");
+const scheduleContent = document.querySelectorAll(".schedule_content");
+
+scheduleNav.forEach((schedule) => {
+    schedule.addEventListener("click", () => {
+        removeActiveSchedule();
+        schedule.classList.add("active");
+
+        const activeContent = document.querySelector(`#${schedule.id}-content`);
+        removeActiveContentSchedule();
+        activeContent.classList.add("active");
+    });
+});
+
+function removeActiveSchedule() {
+    scheduleNav.forEach((schedule) => {
+        schedule.classList.remove("active");
+    });
+}
+
+function removeActiveContentSchedule() {
+    scheduleContent.forEach((content) => {
+        content.classList.remove("active");
+    });
+}

@@ -45,12 +45,12 @@
                     </div>
                     <div class="nav_d">
                         <ul class="flex gap-10 text-bswhite font-semibold">
-                            <li><a href="">HOME</a></li>
-                            <li><a href="">PAGES</a></li>
-                            <li><a href="">PRICING</a></li>
-                            <li><a href="">SPEAKERS</a></li>
-                            <li><a href="">SPONSORS</a></li>
-                            <li><a href="">CONTACTS</a></li>
+                            <li><a href="" class="text-bscyan">HOME</a></li>
+                            <li><a href="" class="hover:text-bscyan transition-all">PAGES</a></li>
+                            <li><a href="" class="hover:text-bscyan transition-all">PRICING</a></li>
+                            <li><a href="" class="hover:text-bscyan transition-all">SPEAKERS</a></li>
+                            <li><a href="" class="hover:text-bscyan transition-all">SPONSORS</a></li>
+                            <li><a href="" class="hover:text-bscyan transition-all">CONTACTS</a></li>
                         </ul>
                     </div>
                     <div class="navD_btn">
@@ -144,6 +144,62 @@
 
     <!-- TIMER AREA -->
 
+    <div class="timer bg-timer bg-cover bg-center pb-[60px]">
+        <div class="container pt-0">
+            <div class="timer_wrapper">
+                <div class="timer_box bg-bswhite pt-[40px] px-[20px] pb-[30px] lg:p-[60px] w-fit mx-auto rounded-bl-3xl rounded-br-3xl shadow-2xl">
+                    <div class="timer_content">
+                        <h3 class="text-[clamp(24px,4vw,36px)] font-bold text-center">Hurry Up!</h3>
+                        <p class="text-[clamp(10px,4vw,15px)] text-center font-light mt-[28px]">Our event is starting soon so don’t waste your time and book your tickets!</p>
+                    </div>
+                    <div class="timer_box flex gap-2 md:gap-4 lg:gap-4 justify-center mt-[30px]">
+
+                        <!-- DAYS -->
+
+                        <div class="time text-center">
+                            <h2 id="days" class="text-[clamp(32px,4vw,94px)] font-semibold bg-gradient-to-tr from-bsblue to-bscyan bg-clip-text text-transparent">00</h2>
+                            <p class="text-[clamp(10px,4vw,14px)] font-light">Days</p>
+                        </div>
+
+                        <div class="time text-center">
+                            <h2 class="text-[clamp(32px,4vw,94px)] font-semibold text-bsgray">:</h2>
+                        </div>
+
+                        <!-- HOURS -->
+
+                        <div class="time text-center">
+                            <h2 id="hours" class="text-[clamp(32px,4vw,94px)] font-semibold bg-gradient-to-tr from-bsred to-bsyellow bg-clip-text text-transparent">00</h2>
+                            <p class="text-[clamp(10px,4vw,14px)] font-light">Hours</p>
+                        </div>
+
+                        <div class="time text-center">
+                            <h2 class="text-[clamp(32px,4vw,94px)] font-semibold text-bsgray">:</h2>
+                        </div>
+
+                        <!-- MINUTES -->
+
+                        <div class="time text-center">
+                            <h2 id="minutes" class="text-[clamp(32px,4vw,94px)] font-semibold bg-gradient-to-tr from-bsblue to-bsteal bg-clip-text text-transparent">00</h2>
+                            <p class="text-[clamp(10px,4vw,14px)] font-light">Minutes</p>
+                        </div>
+
+                        <div class="time text-center">
+                            <h2 class="text-[clamp(32px,4vw,94px)] font-semibold text-bsgray">:</h2>
+                        </div>
+
+                        <!-- SECONDS -->
+
+                        <div class="time text-center">
+                            <h2 id="seconds" class="text-[clamp(32px,4vw,94px)] font-semibold bg-gradient-to-tr from-bsyellow to-bsindigo bg-clip-text text-transparent">00</h2>
+                            <p class="text-[clamp(10px,4vw,14px)] font-light">Seconds</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- WELCOME AREA -->
 
     <div class="welcome py-[60px]">
@@ -175,6 +231,457 @@
                         <img src="./img/home-1-599x376.jpg" alt="">
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCHEDULE AREA -->
+
+    <div class="schedule py-[30px]">
+        <div class="schedule_header w-full lg:flex items-center">
+            <div class="schedule_element">
+                <img src="./img/element.png" alt="" class="hidden lg:block">
+            </div>
+            <div class="schedule_title flex items-center gap-6 w-fit mx-auto">
+                <span class="block w-[35px] h-[3px] bg-bscyan"></span>
+                <h2 class="text-[clamp(24px,4vw,36px)] font-bold">Event Schedule</h2>
+            </div>
+            <div class="schedule_nav bg-bsbrown w-fit m-2 rounded-tl-2xl">
+                <ul class="p-[30px] flex flex-col lg:flex-row gap-2">
+                    <li id="schedule-1" class="schedule_nav_link active text-[15px] text-bsgray font-bold w-[270px] lg:w-[150px]"><a href="javascript:void(0)" class="py-[8px] px-[16px]">FIRST DAY</a></li>
+                    <li id="schedule-2" class="schedule_nav_link text-[15px] text-bsgray font-bold w-[270px] lg:w-[150px]"><a href="javascript:void(0)" class="py-[8px] px-[16px]">SECOND DAY</a></li>
+                    <li id="schedule-3" class="schedule_nav_link text-[15px] text-bsgray font-bold w-[270px] lg:w-[150px]"><a href="javascript:void(0)" class="py-[8px] px-[16px]">THIRD DAY</a></li>
+                    <li id="schedule-4" class="schedule_nav_link text-[15px] text-bsgray font-bold w-[270px] lg:w-[150px]"><a href="javascript:void(0)" class="py-[8px] px-[16px]">FOURTH DAY</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="schedule_wrapper bg-bsdwhite">
+
+                <!-- CONTENT 1 -->
+
+                <div id="schedule-1-content" class="schedule_content active">
+
+                    <div class="card_holder">
+
+                        <!-- SCHEDULE JANE -->
+
+                    <div class="schedule_card">
+                        <div class="sc_image">
+                            <img src="./img/user-1-109x109.jpg" alt="" class="w-[109px] h-[109px]">
+                        </div>
+                        <div class="sc_text">
+                            <p>9:00 am - 11:00 am</p>
+                            <h4>Efficient Business Management Techniques</h4>
+                            <h5>by <span>Jane Smith</span>, JCole Co.</h5>
+                        </div>
+                    </div>
+
+                    <!-- SCHEDULE JOHN -->
+
+                    <div class="schedule_card">
+                        <div class="sc_image">
+                            <img src="./img/user-2-109x109.jpg" alt="" class="w-[109px] h-[109px]">
+                        </div>
+                        <div class="sc_text">
+                            <p>11:00 am - 1:00 PM</p>
+                            <h4>How to Build a Successful Startup in the USA</h4>
+                            <h5>by <span>John Clark</span>, iStep Ltd.</h5>
+                            <p>John Clark, the founder of iStep, one of the most successful American IT companies, will teach you how to plan the work of your startup the right way and get successful.</p>
+                            <h5>Location: <span class="!text-bsyellow">Hall #1</span></h5>
+                        </div>
+                    </div>
+
+                    <!-- SCHEDULE TECH -->
+
+                    <div class="schedule_card">
+                        <div class="sc_image">
+                            <img src="./img/user-1-60x60.jpg" alt="" class="w-[60px] h-[60px]">
+                            <img src="./img/user-2-60x60.jpg" alt="" class="w-[60px] h-[60px]">
+                            <img src="./img/user-3-60x60.jpg" alt="" class="w-[60px] h-[60px]">
+                        </div>
+                        <div class="sc_text">
+                            <p>1:00 pm - 3:00 pm</p>
+                            <h4>Why Technology has a Great Influence on Your Business</h4>
+                            <h5>by <span>J. Smith</span>, <span>C. Wilson</span>, <span>J. Clark</span>, US Tech Holding</h5>
+                        </div>
+                    </div>
+
+                    <!-- SCHEDULE PETER -->
+
+                    <div class="schedule_card">
+                        <div class="sc_image">
+                            <img src="./img/user-3-109x109.jpg" alt="" class="w-[109px] h-[109px]">
+                        </div>
+                        <div class="sc_text">
+                            <p>3:00 pm - 5:00 pm</p>
+                            <h4>Managing International Enterprises</h4>
+                            <h5>by <span>Peter McMillan</span>, LTP Group</h5>
+                        </div>
+                    </div>
+                    </div>
+
+                </div>
+
+                <!-- CONTENT 2 -->
+
+                <div id="schedule-2-content" class="schedule_content">
+
+                   <div class="card_holder">
+
+                     <!-- SCHEDULE TECH -->
+
+                     <div class="schedule_card">
+                        <div class="sc_image">
+                            <img src="./img/user-1-60x60.jpg" alt="" class="w-[60px] h-[60px]">
+                            <img src="./img/user-2-60x60.jpg" alt="" class="w-[60px] h-[60px]">
+                            <img src="./img/user-3-60x60.jpg" alt="" class="w-[60px] h-[60px]">
+                        </div>
+                        <div class="sc_text">
+                            <p>9:00 am - 11:00 am</p>
+                            <h4>Why Technology has a Great Influence on Your Business</h4>
+                            <h5>by <span>J. Smith</span>, <span>C. Wilson</span>, <span>J. Clark</span>, US Tech Holding</h5>
+                        </div>
+                    </div>
+
+                    <!-- SCHEDULE PETER -->
+
+                    <div class="schedule_card">
+                        <div class="sc_image">
+                            <img src="./img/user-3-109x109.jpg" alt="" class="w-[109px] h-[109px]">
+                        </div>
+                        <div class="sc_text">
+                            <p>11:00 am - 1:00 pm</p>
+                            <h4>Managing International Enterprises</h4>
+                            <h5>by <span>Peter McMillan</span>, LTP Group</h5>
+                        </div>
+                    </div>
+
+                    <!-- SCHEDULE JANE -->
+
+                    <div class="schedule_card">
+                        <div class="sc_image">
+                            <img src="./img/user-1-109x109.jpg" alt="" class="w-[109px] h-[109px]">
+                        </div>
+                        <div class="sc_text">
+                            <p>1:00 pm - 3:00 pm</p>
+                            <h4>Efficient Business Management Techniques</h4>
+                            <h5>by <span>Jane Smith</span>, JCole Co.</h5>
+                        </div>
+                    </div>
+
+                    <!-- SCHEDULE JOHN -->
+
+                    <div class="schedule_card">
+                        <div class="sc_image">
+                            <img src="./img/user-2-109x109.jpg" alt="" class="w-[109px] h-[109px]">
+                        </div>
+                        <div class="sc_text">
+                            <p>3:00 pm - 5:00 PM</p>
+                            <h4>How to Build a Successful Startup in the USA</h4>
+                            <h5>by <span>John Clark</span>, iStep Ltd.</h5>
+                            <p>John Clark, the founder of iStep, one of the most successful American IT companies, will teach you how to plan the work of your startup the right way and get successful.</p>
+                            <h5>Location: <span class="!text-bsyellow">Hall #1</span></h5>
+                        </div>
+                    </div>
+                   </div>
+
+                </div>
+
+                <!-- CONTENT 3 -->
+
+                <div id="schedule-3-content" class="schedule_content">
+
+                    <div class="card_holder">
+                        <!-- SCHEDULE TECH -->
+
+                    <div class="schedule_card">
+                        <div class="sc_image">
+                            <img src="./img/user-1-60x60.jpg" alt="" class="w-[60px] h-[60px]">
+                            <img src="./img/user-2-60x60.jpg" alt="" class="w-[60px] h-[60px]">
+                            <img src="./img/user-3-60x60.jpg" alt="" class="w-[60px] h-[60px]">
+                        </div>
+                        <div class="sc_text">
+                            <p>9:00 am - 11:00 am</p>
+                            <h4>Why Technology has a Great Influence on Your Business</h4>
+                            <h5>by <span>J. Smith</span>, <span>C. Wilson</span>, <span>J. Clark</span>, US Tech Holding</h5>
+                        </div>
+                    </div>
+
+                    <!-- SCHEDULE PETER -->
+
+                    <div class="schedule_card">
+                        <div class="sc_image">
+                            <img src="./img/user-3-109x109.jpg" alt="" class="w-[109px] h-[109px]">
+                        </div>
+                        <div class="sc_text">
+                            <p>11:00 am - 1:00 pm</p>
+                            <h4>Managing International Enterprises</h4>
+                            <h5>by <span>McMillan</span>, LTP Enterprises</h5>
+                        </div>
+                    </div>
+
+                    <!-- SCHEDULE JOHN -->
+
+                    <div class="schedule_card">
+                        <div class="sc_image">
+                            <img src="./img/user-2-109x109.jpg" alt="" class="w-[109px] h-[109px]">
+                        </div>
+                        <div class="sc_text">
+                            <p>1:00 pm - 3:00 PM</p>
+                            <h4>How to Build a Successful Startup in the USA</h4>
+                            <h5>by <span>John Clark</span>, iStep Ltd.</h5>
+                            <p>John Clark, the founder of iStep, one of the most successful American IT companies, will teach you how to plan the work of your startup the right way and get successful.</p>
+                            <h5>Location: <span class="!text-bsyellow">Hall #1</span></h5>
+                        </div>
+                    </div>
+
+                    <!-- SCHEDULE JANE -->
+
+                    <div class="schedule_card">
+                        <div class="sc_image">
+                            <img src="./img/user-1-109x109.jpg" alt="" class="w-[109px] h-[109px]">
+                        </div>
+                        <div class="sc_text">
+                            <p>3:00 pm - 5:00 pm</p>
+                            <h4>Efficient Business Management Techniques</h4>
+                            <h5>by <span>Jane Smith</span>, JCole Co.</h5>
+                        </div>
+                    </div>
+
+                    </div>
+                </div>
+
+                <!-- CONTENT 4 -->
+
+                <div id="schedule-4-content" class="schedule_content">
+
+                    <div class="card_holder">
+                        <!-- SCHEDULE PETER -->
+
+                    <div class="schedule_card">
+                        <div class="sc_image">
+                            <img src="./img/user-3-109x109.jpg" alt="" class="w-[109px] h-[109px]">
+                        </div>
+                        <div class="sc_text">
+                            <p>9:00 am - 11:00 am</p>
+                            <h4>Managing International Enterprises</h4>
+                            <h5>by <span>Peter McMillan</span>, LTP Group</h5>
+                        </div>
+                    </div>
+
+                    <!-- SCHEDULE JOHN -->
+
+                    <div class="schedule_card">
+                        <div class="sc_image">
+                            <img src="./img/user-2-109x109.jpg" alt="" class="w-[109px] h-[109px]">
+                        </div>
+                        <div class="sc_text">
+                            <p>11:00 am - 1:00 PM</p>
+                            <h4>How to Build a Successful Startup in the USA</h4>
+                            <h5>by <span>John Clark</span>, iStep Ltd.</h5>
+                            <p>John Clark, the founder of iStep, one of the most successful American IT companies, will teach you how to plan the work of your startup the right way and get successful.</p>
+                            <h5>Location: <span class="!text-bsyellow">Hall #1</span></h5>
+                        </div>
+                    </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- SPONSORS AREA -->
+
+    <div class="sponsors py-[60px]">
+        <div class="container">
+            <div class="sponsors_wrapper">
+                <div class="sponsors_title w-full">
+                    <span class="block w-[35px] h-[3px] bg-bscyan mx-auto"></span>
+                    <h3 class="text-[clamp(24px,4vw,36px)] font-bold text-center pt-[20px]">Event Sponsors</h3>
+                </div>
+                <div class="sponsors_area flex flex-wrap w-full lg:w-[1340px] mt-[60px] mb-[30px]">
+                    <div class="sponsors_tab mx-auto">
+                        <img src="./img/logo-1-270x119.png" alt="" class="w-[270px] h-[119px] px-[15px] mb-[30px] hover:shadow-2xl transition-all">
+                    </div>
+                    <div class="sponsors_tab mx-auto">
+                        <img src="./img/logo-2-270x119.png" alt="" class="w-[270px] h-[119px] px-[15px] mb-[30px] hover:shadow-2xl transition-all">
+                    </div>
+                    <div class="sponsors_tab mx-auto">
+                        <img src="./img/logo-3-270x119.png" alt="" class="w-[270px] h-[119px] px-[15px] mb-[30px] hover:shadow-2xl transition-all">
+                    </div>
+                    <div class="sponsors_tab mx-auto">
+                        <img src="./img/logo-4-270x119.png" alt="" class="w-[270px] h-[119px] px-[15px] mb-[30px] hover:shadow-2xl transition-all">
+                    </div>
+                    <div class="sponsors_tab mx-auto">
+                        <img src="./img/logo-5-267x119.png" alt="" class="w-[270px] h-[119px] px-[15px] mb-[30px] hover:shadow-2xl transition-all">
+                    </div>
+                    <div class="sponsors_tab mx-auto">
+                        <img src="./img/logo-6-270x119.png" alt="" class="w-[270px] h-[119px] px-[15px] mb-[30px] hover:shadow-2xl transition-all">
+                    </div>
+                    <div class="sponsors_tab mx-auto">
+                        <img src="./img/logo-7-270x119.png" alt="" class="w-[270px] h-[119px] px-[15px] mb-[30px] hover:shadow-2xl transition-all">
+                    </div>
+                    <div class="sponsors_tab mx-auto">
+                        <img src="./img/logo-8-270x119.png" alt="" class="w-[270px] h-[119px] px-[15px] mb-[30px] hover:shadow-2xl transition-all">
+                    </div>
+                </div>
+                <div class="sponsors_btn text-center">
+                    <a href="" class="readbtn mx-auto">BECOME A SPONSOR</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TICKET AREA -->
+
+    <div class="ticket bg-brown2 bg-cover bg-center py-[60px]">
+        <div class="container">
+            <div class="ticket_wrapper">
+                <div class="ticket_title w-full">
+                    <span class="block w-[35px] h-[3px] bg-bscyan mx-auto"></span>
+                    <h2 class="text-[clamp(24px,4vw,36px)] text-bswhite font-bold text-center mt-[15px]">Ticket Packages</h2>
+                </div>
+                <div class="ticket_content flex flex-wrap gap-5 w-full lg:w-[1000px] mx-auto">
+
+                    <!-- TICKET 1 -->
+
+                    <div class="ticket_card bg-bswhite pt-[30px] px-[20px] pb-[40px] w-fit rounded-tl-2xl mt-10 shadow-2xl mx-auto">
+                        <div class="tc_title w-[270px]">
+                            <h4 class="text-[clamp(22px,4vw,24px)] font-semibold text-center">Basic Pass</h4>
+                        </div>
+                        <div class="ticket_price flex justify-center">
+                            <span class="text-[24px]">$</span>
+                            <p class="text-[clamp(60px,4vw,72px)] font-semibold text-center">20</p>
+                        </div>
+                        <div class="tc_clist flex justify-center py-4">
+                            <ul class="flex flex-col gap-2">
+                                <li><a href="" class="flex gap-4 items-center"><i class="fa-solid fa-check text-bsindigo"></i>1-Day Entrance</a></li>
+                                <li><a href="" class="flex gap-4 items-center"><i class="fa-solid fa-check text-bsindigo"></i>Essential Access</a></li>
+                                <li><a href="" class="flex gap-4 items-center"><i class="fa-solid fa-check text-bsindigo"></i>1 Guest Tickets</a></li>
+                                <li><a href="" class="flex gap-4 items-center"><i class="fa-solid fa-check text-bsindigo"></i>1 Workshops</a></li>
+                                <li><a href="" class="flex gap-4 items-center"><i class="fa-solid fa-check text-bsindigo"></i>Free Coffee Break</a></li>
+                            </ul>
+                        </div>
+                        <div class="tc_btn text-center mt-5">
+                            <a href="" class="readbtn">BUY NOW</a>
+                        </div>
+                    </div>
+
+                    <!-- TICKET 2 -->
+
+                    <div class="ticket_card bg-bswhite pt-[30px] px-[20px] pb-[40px] w-fit rounded-tl-2xl mt-10 shadow-2xl mx-auto">
+                        <div class="tc_title w-[270px]">
+                            <h4 class="text-[clamp(22px,4vw,24px)] font-semibold text-center">Standard Pass</h4>
+                        </div>
+                        <div class="ticket_price flex justify-center">
+                            <span class="text-[24px]">$</span>
+                            <p class="text-[clamp(60px,4vw,72px)] font-semibold text-center">45</p>
+                        </div>
+                        <div class="tc_clist flex justify-center py-4">
+                            <ul class="flex flex-col gap-2">
+                                <li><a href="" class="flex gap-4 items-center"><i class="fa-solid fa-check text-bsindigo"></i>3-Day Entrance</a></li>
+                                <li><a href="" class="flex gap-4 items-center"><i class="fa-solid fa-check text-bsindigo"></i>Extended Access</a></li>
+                                <li><a href="" class="flex gap-4 items-center"><i class="fa-solid fa-check text-bsindigo"></i>3 Guest Tickets</a></li>
+                                <li><a href="" class="flex gap-4 items-center"><i class="fa-solid fa-check text-bsindigo"></i>3 Workshops</a></li>
+                                <li><a href="" class="flex gap-4 items-center"><i class="fa-solid fa-check text-bsindigo"></i>Free Lunch & Merch</a></li>
+                            </ul>
+                        </div>
+                        <div class="tc_btn text-center mt-5">
+                            <a href="" class="buybtn">BUY NOW</a>
+                        </div>
+                    </div>
+
+                    <!-- TICKET 3 -->
+
+                    <div class="ticket_card bg-bswhite pt-[30px] px-[20px] pb-[40px] w-fit rounded-tl-2xl mt-10 shadow-2xl mx-auto">
+                        <div class="tc_title w-[270px]">
+                            <h4 class="text-[clamp(22px,4vw,24px)] font-semibold text-center">Premium Pass</h4>
+                        </div>
+                        <div class="ticket_price flex justify-center">
+                            <span class="text-[24px]">$</span>
+                            <p class="text-[clamp(60px,4vw,72px)] font-semibold text-center">98</p>
+                        </div>
+                        <div class="tc_clist flex justify-center py-4">
+                            <ul class="flex flex-col gap-2">
+                                <li><a href="" class="flex gap-4 items-center"><i class="fa-solid fa-check text-bsindigo"></i>4-Day Entrance</a></li>
+                                <li><a href="" class="flex gap-4 items-center"><i class="fa-solid fa-check text-bsindigo"></i>Ultimate Access</a></li>
+                                <li><a href="" class="flex gap-4 items-center"><i class="fa-solid fa-check text-bsindigo"></i>5 Guest Tickets</a></li>
+                                <li><a href="" class="flex gap-4 items-center"><i class="fa-solid fa-check text-bsindigo"></i>7 Workshops</a></li>
+                                <li><a href="" class="flex gap-4 items-center"><i class="fa-solid fa-check text-bsindigo"></i>Free Entertainment</a></li>
+                            </ul>
+                        </div>
+                        <div class="tc_btn text-center mt-5">
+                            <a href="" class="buybtn2">BUY NOW</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TRANSFORM AREA -->
+
+    <div class="transform bg-brown bg-cover bg-center py-[30px]">
+        <div class="container">
+            <div class="transform_wrapper text-center w-full">
+                <span class="block w-[35px] h-[3px] bg-bscyan mx-auto"></span>
+                <h2 class="text-[clamp(22px,4vw,36px)] text-bswhite font-bold pt-[20px]">Transform you business experience with our event!</h2>
+                <div class="transform_btn mt-[40px]">
+                    <a href="" class="buybtn">BUY TICKETS</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PERKS -->
+
+    <div class="perks bg-bsbrown py-[60px]">
+        <div class="container">
+            <div class="perks_wrapper flex flex-wrap gap-4 w-full">
+
+                <!-- PERKS 1 -->
+
+                <div class="perks_tab w-[330px] mx-auto">
+                    <div class="perks_image text-center">
+                        <a href="" class="text-[80px] bg-gradient-to-tr from-bsblue to-bscyan bg-clip-text text-transparent"><i class="fa-regular fa-lightbulb"></i></a>
+                        <span><i class="fa-solid fa-play text-[30px] text-gray-600"></i></span>
+                    </div>
+                    <div class="perks_text text-center">
+                        <a href="" class="text-[clamp(22px,4vw,24px)] font-semibold text-bswhite hover:text-bscyan transition-all">Strong Community</a>
+                        <p class="text-[clamp(5px,4vw,15px)] text-bswhite">Supportive and Friendly</p>
+                    </div>
+                </div>
+
+                <!-- PERKS 2 -->
+
+
+                <div class="perks_tab w-[330px] mx-auto">
+                    <div class="perks_image text-center">
+                        <a href="" class="text-[75px] bg-gradient-to-tr from-bsred to-bsyellow bg-clip-text text-transparent"><i class="fa-regular fa-compass"></i></a>
+                        <span><i class="fa-solid fa-play text-[30px] text-gray-600"></i></span>
+                    </div>
+                    <div class="perks_text text-center">
+                        <a href="" class="text-[clamp(22px,4vw,24px)] font-semibold text-bswhite hover:text-bscyan transition-all">Best Location</a>
+                        <p class="text-[clamp(5px,4vw,15px)] text-bswhite">Easy to Reach</p>
+                    </div>
+                </div>
+
+                <!-- PERKS 3 -->
+
+                <div class="perks_tab w-[330px] mx-auto">
+                    <div class="perks_image text-center">
+                        <a href="" class="text-[75px] bg-gradient-to-tr from-bsyellow to-bsindigo bg-clip-text text-transparent"><i class="fa-solid fa-mug-hot"></i></a>
+                        <span><i class="fa-solid fa-play text-[30px] text-gray-600"></i></span>
+                    </div>
+                    <div class="perks_text text-center">
+                        <a href="" class="text-[clamp(22px,4vw,24px)] font-semibold text-bswhite hover:text-bscyan transition-all">Free Coffee Break</a>
+                        <p class="text-[clamp(5px,4vw,15px)] text-bswhite">Included with Basic Pass</p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>

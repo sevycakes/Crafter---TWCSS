@@ -16,6 +16,7 @@ module.exports = {
         bsteal: "#20c997",
         bscyan: "#0dcaf0",
         bswhite: "#fff",
+        bsdwhite: "#f3f3f3",
         bsgray: "#6c757d",
         bsgraydark: "#343a40",
         bsbrown: "#434240",
@@ -24,6 +25,9 @@ module.exports = {
       backgroundImage: {
         'banner1': "url(../dist/img/swiper-slide-1.jpg)",
         'banner2': "url(../dist/img/swiper-slide-2.jpg)",
+        'timer': "url(../dist/img/timer-bg.jpg)",
+        'brown': "url(../dist/img/brown-bg.jpg)",
+        'brown2': "url(../dist/img/brown-bg2.jpg)",
       },
       fontFamily: {
         'poppins': ["Poppins", "sans-serif"]

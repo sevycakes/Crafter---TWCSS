@@ -34,6 +34,60 @@
         @apply w-[270px] transition-all
     }
 
+    .tns-nav {
+        @apply hidden
+    }
+
+    /* SCHEDULE AREA */
+
+    .schedule_nav_link.active {
+        @apply text-bswhite
+    }
+
+    .schedule_content {
+        @apply hidden opacity-0 transition-opacity duration-300
+      }
+      
+    .schedule_content.active {
+        @apply block opacity-100
+    }
+
+    .card_holder {
+        @apply flex flex-wrap gap-8
+    }
+
+    .schedule_card {
+        @apply bg-bswhite py-9 px-5 shadow-2xl w-full lg:flex items-center gap-10
+    }
+
+    .sc_image {
+        @apply flex flex-wrap gap-4 w-[200px]
+    }
+
+    .sc_text {
+        @apply mt-[20px]
+    }
+
+    .sc_text p:first-child {
+        @apply text-[18px] text-bsgray
+    }
+
+    .sc_text h4 {
+        @apply text-[24px] font-semibold mt-[15px] hover:text-bscyan transition-all
+    }
+
+    .sc_text h5 {
+        @apply text-[18px] mt-[15px]
+    }
+
+    .sc_text h5 span {
+        @apply text-bscyan hover:text-bsindigo transition-all
+    }
+
+    .sc_text p:last-child {
+        @apply text-[15px] font-light
+    }
+
 }
 
 @layer utilities {
@@ -44,6 +98,10 @@
 
     .buybtn {
         @apply inline-block text-bswhite font-semibold bg-gradient-to-r from-bsblue to-bscyan hover:bg-gradient-to-l transition-all py-5 px-9 rounded-md
+    }
+
+    .buybtn2 {
+        @apply inline-block text-bswhite font-semibold bg-gradient-to-r from-bsred to-bsyellow hover:bg-gradient-to-l transition-all py-5 px-9 rounded-md
     }
 
     .readbtn {
