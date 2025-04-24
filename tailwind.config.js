@@ -20,6 +20,7 @@ module.exports = {
         bsgray: "#6c757d",
         bsgraydark: "#343a40",
         bsbrown: "#434240",
+        bslbrown: "#454545",
         bsbrowndark: "#0c1115",
       },
       backgroundImage: {
