@@ -7,9 +7,10 @@ toggle.addEventListener('click', () => {
     navm.classList.toggle('open');
 });
 
-// TNS
+// TNS BANNER
 
 const tnslider = tns({
+
     container:".slider",
     slideBy:1,
     speed:700,
@@ -21,6 +22,29 @@ const tnslider = tns({
     controlsContainer: "#controls",
     prevButton: ".previous",
     nextButton: ".next"
+
+})
+
+// TNS TESTIMONIALS
+
+const tnslider2 = tns({
+
+    container:".slider2",
+    slideBy:1,
+    speed:700,
+
+    // loop:false,
+
+    nav:true,
+    navContainer: "#controller",
+    navPosition:"bottom",
+    autoPlay:true,
+    autoPlayTimeout:10000,
+    autoPlayButtonOutput:false,
+    controlsContainer: "#controls2",
+    prevButton: ".previous2",
+    nextButton: ".next2"
+
 })
 
 // TIMER
@@ -52,7 +76,7 @@ const tnslider = tns({
 const getElement = id => document.getElementById(id);
 const [Days, Hours, Minutes, Seconds] = ['days', 'hours', 'minutes', 'seconds'].map(getElement);
 
-const targetDate = new Date("May 1, 2025 00:00:00").getTime();
+const targetDate = new Date("June 01, 2025 00:00:00").getTime();
 
 setInterval(() => {
   const distance = targetDate - Date.now();
@@ -97,3 +121,26 @@ function removeActiveContentSchedule() {
         content.classList.remove("active");
     });
 }
+
+// HEADER
+
+const header = document.querySelector('.header');
+const toggleMenu = document.querySelector('.toggle_menu');
+const navM = document.querySelector('.nav_m');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+        header.classList.remove('lg:bg-transparent');
+        header.classList.add('lg:bg-bsbrown');
+        header.classList.remove('lg:opacity-80')
+        header.classList.add('lg:opacity-100')
+    } else {
+        header.classList.remove('lg:bg-bsbrown');
+        header.classList.add('lg:bg-transparent');
+    }
+});
+
+toggleMenu.addEventListener('click', () => {
+    navM.classList.toggle('w-0');
+    navM.classList.toggle('w-[250px]');
+});

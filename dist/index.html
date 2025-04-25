@@ -9,13 +9,42 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
 
+    <style>
+
+        #banner {
+            position: relative !important;
+        }
+
+        .tns-nav {
+            display: flex !important;
+            justify-content: center;
+            margin-top: 1rem;
+            position: absolute;
+            top: 90%;
+            right: 50%;
+          }
+      
+        .tns-nav button {
+            background-color: gray;
+            border-radius: 50%;
+            width: 10px;
+            height: 10px;
+            margin: 0 5px;
+            border: none;
+          }
+      
+        .tns-nav button.tns-nav-active {
+            background-color: white;
+          }
+      
+    </style>
 </head>
 
 <body class="!font-poppins">
     
     <!-- HEADER AREA -->
 
-    <div class="header lg:fixed lg:z-30 lg:w-full lg:opacity-80 lg:bg-transparent bg-bsbrown border-b-[1px] border-black shadow-xl">
+    <div class="header lg:fixed lg:z-30 lg:w-full lg:opacity-80 lg:bg-transparent transition-all bg-bsbrown border-b-[1px] border-black shadow-xl">
         <div class="container">
             <div class="header_wrapper">
 
@@ -217,6 +246,178 @@
         </div>
     </div>
 
+    <!-- SPEAKERS AREA -->
+
+    <div class="speakers bg-brown bg-cover bg-center py-[60px]">
+        <div class="container">
+            <div class="speakers_wrapper">
+                <div class="speakers_text lg:flex lg:flex-row-reverse lg:justify-between">
+                    <div class="speakers_title lg:w-fit">
+                        <span class="block w-[35px] h-[3px] bg-bscyan lg:ml-auto"></span>
+                        <h2 class="text-[clamp(24px,4vw,36px)] text-bswhite font-bold mt-[20px]">Speakers</h2>
+                    </div>
+                    <div class="speakers_details mt-5">
+                        <p class="text-[15px] text-bswhite lg:w-[1000px]">Our event gathers over 50 speakers. They include international company owners and young entrepreneurs that revolutionized the way of doing business. Here are some of them.</p>
+                    </div>
+                </div>
+                <div class="speakers_content flex flex-wrap gap-8 mt-5 lg:mt-10 lg:w-[1200px] mx-auto">
+
+                    <!-- SPEAKERS 1 -->
+
+                    <div class="speakers_card group bg-bswhite relative w-fit max-w-[375px] overflow-hidden mx-auto">
+                        <div class="speakers_image relative">
+                            <img src="./img/team-modern-1-375x290.jpg" alt="" class="w-full h-auto block">
+                    
+                            <div class="absolute inset-0 bg-black/10 backdrop-brightness-50 opacity-0 group-hover:opacity-100 transition-all duration-300 z-10"></div>
+
+                            <div class="absolute top-[43%] left-[25%] group-hover:left-[30%] opacity-0 group-hover:opacity-100 transition-all duration-300 z-20">
+                                <ul class="flex gap-6">
+                                    <li><a href="" class="text-[30px] text-bswhite hover:text-bscyan transition-all shadow-2xl"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="" class="text-[30px] text-bswhite hover:text-bscyan transition-all shadow-2xl"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href="" class="text-[30px] text-bswhite hover:text-bscyan transition-all shadow-2xl"><i class="fa-brands fa-twitter"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    
+                        <div class="speakers_card_details w-full px-4 py-10">
+                            <div class="text-center">
+                                <a href="" class="text-[clamp(22px,4vw,24px)]">John Clark</a>
+                            </div>
+                            <p class="text-[12px] text-center">CEO, ISTEP LTD.</p>
+                        </div>
+                    </div>
+
+                    <!-- SPEAKERS 2 -->
+
+                    <div class="speakers_card group bg-bswhite relative w-fit max-w-[375px] overflow-hidden mx-auto">
+                        <div class="speakers_image relative">
+                            <img src="./img/team-modern-2-375x290.jpg" alt="" class="w-full h-auto block">
+                    
+                            <div class="absolute inset-0 bg-black/10 backdrop-brightness-50 opacity-0 group-hover:opacity-100 transition-all duration-300 z-10"></div>
+
+                            <div class="absolute top-[43%] left-[25%] group-hover:left-[30%] opacity-0 group-hover:opacity-100 transition-all duration-300 z-20">
+                                <ul class="flex gap-6">
+                                    <li><a href="" class="text-[30px] text-bswhite hover:text-bscyan transition-all shadow-2xl"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="" class="text-[30px] text-bswhite hover:text-bscyan transition-all shadow-2xl"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href="" class="text-[30px] text-bswhite hover:text-bscyan transition-all shadow-2xl"><i class="fa-brands fa-twitter"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    
+                        <div class="speakers_card_details w-full px-4 py-10">
+                            <div class="text-center">
+                                <a href="" class="text-[clamp(22px,4vw,24px)]">Helen Williams</a>
+                            </div>
+                            <p class="text-[12px] text-center">CFO, MOUNTAINCAST</p>
+                        </div>
+                    </div>
+
+                    <!-- SPEAKERS 3 -->
+
+                    <div class="speakers_card group bg-bswhite relative w-fit max-w-[375px] overflow-hidden mx-auto">
+                        <div class="speakers_image relative">
+                            <img src="./img/team-modern-3-375x290.jpg" alt="" class="w-full h-auto block">
+                    
+                            <div class="absolute inset-0 bg-black/10 backdrop-brightness-50 opacity-0 group-hover:opacity-100 transition-all duration-300 z-10"></div>
+
+                            <div class="absolute top-[43%] left-[25%] group-hover:left-[30%] opacity-0 group-hover:opacity-100 transition-all duration-300 z-20">
+                                <ul class="flex gap-6">
+                                    <li><a href="" class="text-[30px] text-bswhite hover:text-bscyan transition-all shadow-2xl"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="" class="text-[30px] text-bswhite hover:text-bscyan transition-all shadow-2xl"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href="" class="text-[30px] text-bswhite hover:text-bscyan transition-all shadow-2xl"><i class="fa-brands fa-twitter"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    
+                        <div class="speakers_card_details w-full px-4 py-10">
+                            <div class="text-center">
+                                <a href="" class="text-[clamp(22px,4vw,24px)]">Peter McMillan</a>
+                            </div>
+                            <p class="text-[12px] text-center">MANAGING DIRECTOR, LTP GROUP</p>
+                        </div>
+                    </div>
+
+                    <!-- SPEAKERS 4 -->
+
+                    <div class="speakers_card group bg-bswhite relative w-fit max-w-[375px] overflow-hidden mx-auto">
+                        <div class="speakers_image relative">
+                            <img src="./img/team-modern-4-375x290.jpg" alt="" class="w-full h-auto block">
+                    
+                            <div class="absolute inset-0 bg-black/10 backdrop-brightness-50 opacity-0 group-hover:opacity-100 transition-all duration-300 z-10"></div>
+
+                            <div class="absolute top-[43%] left-[25%] group-hover:left-[30%] opacity-0 group-hover:opacity-100 transition-all duration-300 z-20">
+                                <ul class="flex gap-6">
+                                    <li><a href="" class="text-[30px] text-bswhite hover:text-bscyan transition-all shadow-2xl"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="" class="text-[30px] text-bswhite hover:text-bscyan transition-all shadow-2xl"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href="" class="text-[30px] text-bswhite hover:text-bscyan transition-all shadow-2xl"><i class="fa-brands fa-twitter"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    
+                        <div class="speakers_card_details w-full px-4 py-10">
+                            <div class="text-center">
+                                <a href="" class="text-[clamp(22px,4vw,24px)]">Jack Peterson</a>
+                            </div>
+                            <p class="text-[12px] text-center">CTO, WILSON'S TECH</p>
+                        </div>
+                    </div>
+
+                    <!-- SPEAKERS 5 -->
+
+                    <div class="speakers_card group bg-bswhite relative w-fit max-w-[375px] overflow-hidden mx-auto">
+                        <div class="speakers_image relative">
+                            <img src="./img/team-modern-5-375x290.jpg" alt="" class="w-full h-auto block">
+                    
+                            <div class="absolute inset-0 bg-black/10 backdrop-brightness-50 opacity-0 group-hover:opacity-100 transition-all duration-300 z-10"></div>
+
+                            <div class="absolute top-[43%] left-[25%] group-hover:left-[30%] opacity-0 group-hover:opacity-100 transition-all duration-300 z-20">
+                                <ul class="flex gap-6">
+                                    <li><a href="" class="text-[30px] text-bswhite hover:text-bscyan transition-all shadow-2xl"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="" class="text-[30px] text-bswhite hover:text-bscyan transition-all shadow-2xl"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href="" class="text-[30px] text-bswhite hover:text-bscyan transition-all shadow-2xl"><i class="fa-brands fa-twitter"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    
+                        <div class="speakers_card_details w-full px-4 py-10">
+                            <div class="text-center">
+                                <a href="" class="text-[clamp(22px,4vw,24px)]">Jane Smith</a>
+                            </div>
+                            <p class="text-[12px] text-center">HEAD OF MARKETING, JCOLE CO.</p>
+                        </div>
+                    </div>
+
+                    <!-- SPEAKERS 6 -->
+
+                    <div class="speakers_card group bg-bswhite relative w-fit max-w-[375px] overflow-hidden mx-auto">
+                        <div class="speakers_image relative">
+                            <img src="./img/team-modern-6-375x290.png" alt="" class="w-full h-auto block">
+                    
+                            <div class="absolute inset-0 bg-black/10 backdrop-brightness-50 opacity-0 group-hover:opacity-100 transition-all duration-300 z-10"></div>
+
+                            <div class="absolute top-[43%] left-[25%] group-hover:left-[30%] opacity-0 group-hover:opacity-100 transition-all duration-300 z-20">
+                                <ul class="flex gap-6">
+                                    <li><a href="" class="text-[30px] text-bswhite hover:text-bscyan transition-all shadow-2xl"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="" class="text-[30px] text-bswhite hover:text-bscyan transition-all shadow-2xl"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href="" class="text-[30px] text-bswhite hover:text-bscyan transition-all shadow-2xl"><i class="fa-brands fa-twitter"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    
+                        <div class="speakers_card_details w-full px-4 py-10">
+                            <div class="text-center">
+                                <a href="" class="text-[clamp(22px,4vw,24px)]">Sam Anderson</a>
+                            </div>
+                            <p class="text-[12px] text-center">CO-FOUNDER, XFIRE</p>
+                        </div>
+                    </div>
+                    
+
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- SCHEDULE AREA -->
 
     <div class="schedule py-[30px]">
@@ -230,10 +431,10 @@
             </div>
             <div class="schedule_nav bg-bsbrown w-fit m-2 rounded-tl-2xl">
                 <ul class="p-[30px] flex flex-col lg:flex-row gap-2">
-                    <li id="schedule-1" class="schedule_nav_link active text-[15px] text-bsgray font-bold w-[270px] lg:w-[150px]"><a href="javascript:void(0)" class="py-[8px] px-[16px]">FIRST DAY</a></li>
-                    <li id="schedule-2" class="schedule_nav_link text-[15px] text-bsgray font-bold w-[270px] lg:w-[150px]"><a href="javascript:void(0)" class="py-[8px] px-[16px]">SECOND DAY</a></li>
-                    <li id="schedule-3" class="schedule_nav_link text-[15px] text-bsgray font-bold w-[270px] lg:w-[150px]"><a href="javascript:void(0)" class="py-[8px] px-[16px]">THIRD DAY</a></li>
-                    <li id="schedule-4" class="schedule_nav_link text-[15px] text-bsgray font-bold w-[270px] lg:w-[150px]"><a href="javascript:void(0)" class="py-[8px] px-[16px]">FOURTH DAY</a></li>
+                    <li id="schedule-1" class="schedule_nav_link active text-[15px] text-bsgray font-bold w-[270px] lg:w-[200px]"><a href="javascript:void(0)" class="py-[8px] px-[16px]">FIRST DAY</a></li>
+                    <li id="schedule-2" class="schedule_nav_link text-[15px] text-bsgray font-bold w-[270px] lg:w-[200px]"><a href="javascript:void(0)" class="py-[8px] px-[16px]">SECOND DAY</a></li>
+                    <li id="schedule-3" class="schedule_nav_link text-[15px] text-bsgray font-bold w-[270px] lg:w-[200px]"><a href="javascript:void(0)" class="py-[8px] px-[16px]">THIRD DAY</a></li>
+                    <li id="schedule-4" class="schedule_nav_link text-[15px] text-bsgray font-bold w-[270px] lg:w-[200px]"><a href="javascript:void(0)" class="py-[8px] px-[16px]">FOURTH DAY</a></li>
                 </ul>
             </div>
         </div>
@@ -399,7 +600,7 @@
                         <div class="sc_text">
                             <p>11:00 am - 1:00 pm</p>
                             <h4>Managing International Enterprises</h4>
-                            <h5>by <span>McMillan</span>, LTP Enterprises</h5>
+                            <h5>by <span>Peter McMillan</span>, LTP Group</h5>
                         </div>
                     </div>
 
@@ -604,6 +805,98 @@
         </div>
     </div>
 
+    <!-- TESTIMONIAL AREA -->
+
+    <div id="testimonials" class="py-[100px]">
+        <div class="container">
+            <div class="subcontainer">
+
+                <div class="testimonials-wrapper relative">
+
+                    <div class="testimonials_header mb-[30px]">
+                        <h2 class="text-[clamp(24px,4vw,36px)] font-bold text-center">Testimonials</h2>
+                    </div>
+
+                    <div class="slider-wrapper">
+                        <div class="slider2">
+
+                            <!-- SLIDE 1 -->
+
+                            <div class="slide2 w-full !relative">
+                                <div class="slide-details w-fit max-w-[820px] mx-auto">
+                                    <p class="text-[18px] text-center font-light italic">It was a very useful conference, there were a number of presentations that completely changed my understanding of startups. I look forward to visiting this event again next year, maybe even as a speaker.</p>
+                                </div>
+                                <div class="testimonials-element absolute -top-6 left-[39.8%] z-0">
+                                    <img src="./img/element.png" alt="">
+                                </div>
+                                <div class="slide-name mt-10">
+                                    <p class="text-[18px] text-bsindigo text-center">Janna Smith</p>
+                                </div>
+                            </div>
+
+                            <!-- SLIDE 2 -->
+
+                            <div class="slide2 w-full !relative">
+                                <div class="slide-details w-fit max-w-[820px] mx-auto">
+                                    <p class="text-[18px] text-center font-light italic">It is an honour to be invited to this event as a speaker and visitor. By attending Eventy everyone here can share their business experiences so we can learn something new and change the industry for the better.</p>
+                                </div>
+                                <div class="testimonials-element absolute -top-6 left-[39.8%] z-0">
+                                    <img src="./img/element.png" alt="">
+                                </div>
+                                <div class="slide-name mt-10">
+                                    <p class="text-[18px] text-bsindigo text-center">James Williams</p>
+                                </div>
+                            </div>
+
+                            <!-- SLIDE 3 -->
+
+                            <div class="slide2 w-full !relative">
+                                <div class="slide-details w-fit max-w-[820px] mx-auto">
+                                    <p class="text-[18px] text-center font-light italic">This venue is an excellent opportunity to share experiences, to gain learning and to establish and enforce connections among executives and business leaders in this industry in the eternal pursuit of maximizing customer experience.</p>
+                                </div>
+                                <div class="testimonials-element absolute -top-6 left-[39.8%] z-0">
+                                    <img src="./img/element.png" alt="">
+                                </div>
+                                <div class="slide-name mt-10">
+                                    <p class="text-[18px] text-bsindigo text-center">Kate McMillan</p>
+                                </div>
+                            </div>
+
+                            <!-- SLIDE 4 -->
+
+                            <div class="slide2 w-full !relative">
+                                <div class="slide-details w-fit max-w-[820px] mx-auto">
+                                    <p class="text-[18px] text-center font-light italic">Very good conference. A unique opportunity to meet with the leading business experts and CEOs from a variety of companies to really see the main trends of technological and business startups.</p>
+                                </div>
+                                <div class="testimonials-element absolute -top-6 left-[39.8%] z-0">
+                                    <img src="./img/element.png" alt="">
+                                </div>
+                                <div class="slide-name mt-10">
+                                    <p class="text-[18px] text-bsindigo text-center">Peter Wilson</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div id="controls2">
+                        <button class="previous2 absolute top-[43%] left-0"><i class="fa-solid fa-arrow-left"></i></button>
+                        <button class="next2 absolute top-[43%] right-0"><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+
+                    <div id="controller" class="flex gap-4 justify-center mt-10">
+                        <span class="inline-block p-7 rounded-full bg-user1"></span>
+                        <span class="inline-block p-7 rounded-full bg-user2"></span>
+                        <span class="inline-block p-7 rounded-full bg-user3"></span>
+                        <span class="inline-block p-7 rounded-full bg-user4"></span>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
     <!-- TRANSFORM AREA -->
 
     <div class="transform bg-brown bg-cover bg-center py-[30px]">
@@ -714,6 +1007,82 @@
         </div>
     </div>
 
+    <!-- NEWS -->
+
+    <div class="news py-[60px]">
+        <div class="container">
+            <div class="news_wrapper">
+                <div class="news_title w-full">
+                    <span class="block w-[35px] h-[3px] bg-bscyan mx-auto"></span>
+                    <h2 class="text-[clamp(24px,4vw,36px)] text-center font-bold mt-[20px]">Latest News</h2>
+                </div>
+                <div class="news_content flex flex-wrap gap-10 mt-10 w-full">
+
+                    <!-- NEWS 1 -->
+
+                    <div class="news_card group !relative overflow-hidden w-[370px] mx-auto">
+                        <div class="nc_image">
+                            <img src="./img/post-classic-1-370x255.jpg" alt="" class="min-w-[310px] max-h-[255px] group-hover:scale-105 transition-all">
+                        </div>
+                        <div class="nc_text pt-[30px]">
+                            <div class="nc_text_title">
+                                <a href="" class="text-[clamp(22px,4vw,24px)] hover:text-bscyan transition-all">Top 8 Email Marketing Tips from Our Speakers</a>
+                            </div>
+                            <div class="nc_text_content flex gap-8 mt-5">
+                                <p class="text-[18px] text-bsgray">April 25, 2021</p>
+                                <a href="" class="text-[18px] text-bsindigo hover:text-bsyellow transition-all">Marketing</a>
+                            </div>
+                        </div>
+                        <div class="nc_element absolute bottom-0 right-0 -z-10">
+                            <img src="./img/element.png" alt=""">
+                        </div>
+                    </div>
+                    
+                    <!-- NEWS 2 -->
+
+                    <div class="news_card group !relative overflow-hidden w-[370px] mx-auto">
+                        <div class="nc_image">
+                            <img src="./img/post-classic-2-370x255.jpg" alt="" class="min-w-[310px] max-h-[255px] group-hover:scale-105 transition-all">
+                        </div>
+                        <div class="nc_text pt-[30px]">
+                            <div class="nc_text_title">
+                                <a href="" class="text-[clamp(22px,4vw,24px)] hover:text-bscyan transition-all">How Your Business Can Benefit from Taking Part in Eventy</a>
+                            </div>
+                            <div class="nc_text_content flex gap-8 mt-5">
+                                <p class="text-[18px] text-bsgray">April 25, 2021</p>
+                                <a href="" class="text-[18px] text-bsindigo hover:text-bsyellow transition-all">News</a>
+                            </div>
+                        </div>
+                        <div class="nc_element absolute bottom-0 right-0 -z-10">
+                            <img src="./img/element.png" alt=""">
+                        </div>
+                    </div>
+
+                    <!-- NEWS 3 -->
+
+                    <div class="news_card group !relative overflow-hidden w-[370px] mx-auto">
+                        <div class="nc_image">
+                            <img src="./img/post-classic-3-370x255.jpg" alt="" class="min-w-[310px] max-h-[255px] group-hover:scale-105 transition-all">
+                        </div>
+                        <div class="nc_text pt-[30px]">
+                            <div class="nc_text_title">
+                                <a href="" class="text-[clamp(22px,4vw,24px)] hover:text-bscyan transition-all">10 Sales Workshops of Eventy that You Must Visit</a>
+                            </div>
+                            <div class="nc_text_content flex gap-8 mt-5">
+                                <p class="text-[18px] text-bsgray">April 25, 2021</p>
+                                <a href="" class="text-[18px] text-bsindigo hover:text-bsyellow transition-all">Sales</a>
+                            </div>
+                        </div>
+                        <div class="nc_element absolute bottom-0 right-0 -z-10">
+                            <img src="./img/element.png" alt=""">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- PERKS -->
 
     <div class="perks bg-bsbrown py-[60px]">
@@ -767,22 +1136,25 @@
     <!-- FOOTER AREA -->
 
     <div class="footer bg-bsbrown">
-        <div class="footer_wrapper lg:grid lg:grid-cols-[40%,50%]">
+        <div class="footer_wrapper lg:grid lg:grid-cols-[40%,50%] lg:gap-16">
             <div class="footer_map w-full h-[250px] md:h-[400px]">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3870.371970330474!2d121.34804129999999!3d14.055198807638643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd5cd2d6006569%3A0x9075b8a72b9d5fb0!2sFrontline%20Business%20Solutions%2C%20Inc.!5e0!3m2!1sen!2sph!4v1745492161364!5m2!1sen!2sph" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div class="footer_content pt-[60px] px-4 md:grid md:grid-cols-[30%,70%] md:items-center">
-                <div class="footer_socials flex flex-col mt-[30px] md:mt-0 lg:mt-0">
+
+            <div class="footer_content pt-[60px] px-4 md:grid md:grid-cols-[30%,70%] lg:grid-cols-[70%,30%] lg:gap-10 md:items-center">
+
+                <div class="footer_socials flex flex-col mt-[30px] md:mt-0 lg:mt-0 lg:order-last">
                     <h5 class="text-[18px] text-bswhite font-bold">SHARE</h5>
                     <div class="socials_icons">
                         <ul class="flex md:flex-col md:mt-5 gap-4">
-                            <li><a href=""><i class="fa-brands fa-facebook-f text-[30px] text-bswhite p-3 px-4 rounded-full bg-bslbrown"></i></a></li>
-                            <li><a href=""><i class="fa-brands fa-instagram text-[30px] text-bswhite p-3 rounded-full bg-bslbrown"></i></a></li>
-                            <li><a href=""><i class="fa-brands fa-twitter text-[30px] text-bswhite p-3 rounded-full bg-bslbrown"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-facebook-f text-[30px] text-bswhite p-3 px-4 rounded-full bg-bslbrown hover:bg-bscyan transition-all"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-instagram text-[30px] text-bswhite p-3 rounded-full bg-bslbrown hover:bg-bscyan transition-all"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-twitter text-[30px] text-bswhite p-3 rounded-full bg-bslbrown hover:bg-bscyan transition-all"></i></a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="footer_details">
+
+                <div class="footer_details order-first">
                     <div class="footer_loc">
                         <h5 class="text-[18px] text-bswhite font-bold">Our Location</h5>
                         <p class="text-[18px] text-bsgray mt-[20px]">

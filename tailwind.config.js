@@ -29,6 +29,10 @@ module.exports = {
         'timer': "url(../dist/img/timer-bg.jpg)",
         'brown': "url(../dist/img/brown-bg.jpg)",
         'brown2': "url(../dist/img/brown-bg2.jpg)",
+        'user1': "url(../dist/img/user-1-60x60.jpg)",
+        'user2': "url(../dist/img/user-2-60x60.jpg)",
+        'user3': "url(../dist/img/user-3-60x60.jpg)",
+        'user4': "url(../dist/img/user-4-60x60.jpg)",
       },
       fontFamily: {
         'poppins': ["Poppins", "sans-serif"]

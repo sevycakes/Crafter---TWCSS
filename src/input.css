@@ -34,29 +34,9 @@
         @apply w-[270px] transition-all
     }
 
-    .tns-nav {
-        @apply hidden
+    #banner .tns-nav {
+        @apply lg:hidden
     }
-
-    /* .tns-nav {
-        display: flex !important;
-        justify-content: center;
-        margin-top: 1rem;
-        position: absolute;
-        top: 65%;
-        right: 50%;
-      }
-      .tns-nav button {
-        background-color: gray;
-        border-radius: 50%;
-        width: 10px;
-        height: 10px;
-        margin: 0 5px;
-        border: none;
-      }
-      .tns-nav button.tns-nav-active {
-        background-color: white;
-      } */
 
     /* SCHEDULE AREA */
 
@@ -119,6 +99,10 @@
         @apply p-16 rounded-full bg-gray-300 opacity-50 absolute -top-4 hover:scale-110 transition-all
     }
 
+    #controller .tns-nav-active {
+        @apply scale-110 transition-all shadow-2xl
+    }
+
 }
 
 @layer utilities {
@@ -128,15 +112,15 @@
     }
 
     .buybtn {
-        @apply inline-block text-bswhite font-semibold bg-gradient-to-r from-bsblue to-bscyan hover:bg-gradient-to-l transition-all py-5 px-9 rounded-md
+        @apply inline-block text-bswhite font-semibold bg-gradient-to-r from-bsblue to-bscyan hover:bg-gradient-to-l transition-all py-4 px-10 rounded-md
     }
 
     .buybtn2 {
-        @apply inline-block text-bswhite font-semibold bg-gradient-to-r from-bsred to-bsyellow hover:bg-gradient-to-l transition-all py-5 px-9 rounded-md
+        @apply inline-block text-bswhite font-semibold bg-gradient-to-r from-bsred to-bsyellow hover:bg-gradient-to-l transition-all py-4 px-10 rounded-md
     }
 
     .readbtn {
-        @apply inline-block text-[15px] font-semibold py-5 px-9 border hover:border-transparent hover:bg-bslyellow transition-all border-black rounded-md
+        @apply inline-block text-[15px] font-semibold py-4 px-10 border hover:border-transparent hover:bg-bslyellow transition-all border-black rounded-md
     }
 
 }
