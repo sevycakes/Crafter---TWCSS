@@ -87,6 +87,10 @@
     .sc_text p:last-child {
         @apply text-[15px] font-light
     }
+    
+    /* * {
+        @apply outline
+      } */
 
     /* ZOOM */
 

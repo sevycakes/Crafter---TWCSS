@@ -144,3 +144,5 @@ toggleMenu.addEventListener('click', () => {
     navM.classList.toggle('w-0');
     navM.classList.toggle('w-[250px]');
 });
+
+AOS.init();
